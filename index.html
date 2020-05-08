@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS KNICK NACKS</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="parent">
+      <nav class="navbar" id="navbar">
+        <a href="#forms"><i class="fas fa-sign-in-alt"></i> </a>
+        <a href="#calc"><i class="fas fa-calculator"></i> </a>
+        <a href="#clock"><i class="far fa-clock"></i> </a>
+      </nav>
+    </div>
+    <!-- NAVBAR -->
+
+    <!-- PLATFORMER -->
+    <section class="formsec" id="forms">
+      <div id="error"></div>
+      <form id="form" action="/" method="GET">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" name="Password" type="text" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <!-- PLATFORMER -->
+
+    <!-- CALC -->
+    <section class="calcsec" id="calc">
+      <div class="main-container">
+        <div class="output">
+          <div data-prev class="prev-operand"></div>
+          <div data-cur class="cur-operand"></div>
+        </div>
+
+        <button data-clear class="span-two">AC</button>
+        <button data-delete>Del</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>x</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+      </div>
+    </section>
+
+    <!-- CALC -->
+
+    <!-- CLOCK -->
+    <section id="clock" class="clocksec">
+      <div class="clock">
+        <div class="hand hour" data-hour-hand></div>
+        <div class="hand min" data-min-hand></div>
+        <div class="hand sec" data-sec-hand></div>
+
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+      </div>
+    </section>
+
+    <!-- CLOCK -->
+
+    <script
+      src="https://kit.fontawesome.com/3b374015a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script defer src="form.js"></script>
+    <script src="calc.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
